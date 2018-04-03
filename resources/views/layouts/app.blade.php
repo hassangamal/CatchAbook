@@ -22,6 +22,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
+        .Home a{
+            text-decoration: none;
+        }
         .Home .header {
             width: 300px;
             height: 240px;
