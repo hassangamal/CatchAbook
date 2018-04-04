@@ -15,7 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/tr', function () {
+    return view('/layouts/app');
+});
+
+
 Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 // to all books and books
 Route::get('/home', 'HomeController@index');
 // to all books and books
