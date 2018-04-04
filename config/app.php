@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'CatchAbook'),
 
     /*
     |--------------------------------------------------------------------------
@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        CatchAbook\Providers\AppServiceProvider::class,
+        CatchAbook\Providers\AuthServiceProvider::class,
+        // CatchAbook\Providers\BroadcastServiceProvider::class,
+        CatchAbook\Providers\EventServiceProvider::class,
+        CatchAbook\Providers\RouteServiceProvider::class,
 
     ],
 

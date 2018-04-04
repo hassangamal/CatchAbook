@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace CatchAbook\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\book;
+use CatchAbook\User;
+use CatchAbook\book;
 use Auth;
 
 class HomeController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace CatchAbook;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -28,6 +28,6 @@ class User extends Authenticatable
     ];
     public function Book()
     {
-        return $this->hasMany('App\book');
+        return $this->hasMany('CatchAbook\book');
     }
 }
