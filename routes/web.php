@@ -23,3 +23,12 @@ Route::get('/tr', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// to all books and books
+Route::get('/home', 'HomeController@index');
+// to all books and books
+Route::get('/mybrow', 'HomeController@mybrow');
+// to all books and books
+Route::get('/brow', 'HomeController@brow');
+// to Add books
+Route::get('/add', 'HomeController@add');
+

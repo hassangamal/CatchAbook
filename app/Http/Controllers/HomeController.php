@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use CatchAbook\User;
 use CatchAbook\book;
 use Auth;
+use Illuminate\Support\Collection;
 
 class HomeController extends Controller
 {
@@ -26,8 +27,26 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user= Auth::user();
-        $books= $user->book;
-        return view('home')->with('books',$books);
+        $user = Auth::user();
+        $books = $user->book;
+        return view('home')->with('books', $books);
+    }
+
+    public function mybrow()
+    {
+        $user = Auth::user();
+        $books = $user->book->where('borrow',1);
+        return view('home')->with('books', $books);
+    }
+    public function brow()
+    {
+        $user = Auth::user();
+        $books = $user->book->where('borrow',0);
+        return view('home')->with('books', $books);
+
+    }
+    public function add()
+    {
+        return view('add');
     }
 }
