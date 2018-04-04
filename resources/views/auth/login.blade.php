@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Login')
+
+
+
 @section('content')
+<link href="{{ asset('css/login.css') }}" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -55,15 +61,35 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-primary" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                             </div>
                         </div>
                     </form>
+                    <div class="socialmedia">
+                        <p style="font-weight: 700; margin: 1rem auto;">Sign in with</p>
+                        <div class="socialicons">
+                            
+                            <div class="sclbtn twitterbtn">
+                                <i class="fab fa-twitter"></i>
+                                <span>Continue with Twitter</span>
+                            </div>
+                            <div class="sclbtn facebookbtn">
+                                <i class="fab fa-facebook"></i>
+                                <span>Continue with Facebook</span>
+                            </div>
+                            <div class="sclbtn googlebtn">
+                                <i class="fab fa-google-plus-g"></i>
+                                <span>Continue with Google</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 @endsection

@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/login.css') }}" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -69,6 +71,24 @@
                             </div>
                         </div>
                     </form>
+                    <div class="socialmedia">
+                        <p style="font-weight: 700; margin: 1rem auto;">Sign up with</p>
+                        <div class="socialicons">
+                            
+                            <div class="sclbtn twitterbtn">
+                                <i class="fab fa-twitter"></i>
+                                <span>Continue with Twitter</span>
+                            </div>
+                            <div class="sclbtn facebookbtn">
+                                <i class="fab fa-facebook"></i>
+                                <span>Continue with Facebook</span>
+                            </div>
+                            <div class="sclbtn googlebtn">
+                                <i class="fab fa-google-plus-g"></i>
+                                <span>Continue with Google</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
