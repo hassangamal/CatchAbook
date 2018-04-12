@@ -145,13 +145,15 @@
         @yield('content')
     </main>
 
-
+<!--
     <footer>
         <nav class="navbar sticky-bottom navbar-light mx-auto border-top">
             <p>KingOfWrongAnswer OSC</p>
         </nav>
 
     </footer>
+-->
+    
 </div>
 </body>
 </html>

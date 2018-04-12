@@ -23,7 +23,7 @@
     
     <div class="isbninfo">
                      <input class="form-control" id="ex3" type="text"><i class="fas fa-info-circle"></i>
-                    <span class="fa-info-circle hint--right hint--bounce" aria-label="you can get it from goodreads" id="rr">You only see me in code</span>
+                    <span class="fa-info-circle hint--right hint--bounce" aria-label="you can get it from goodreads" id="rr"></span>
    </div>
    
 </div>
