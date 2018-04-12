@@ -1,0 +1,104 @@
+body
+{
+    background:url("https://www.chroniclebooks.com/media/wysiwyg/asset/site/images/static-pages/Metreon.jpg");
+    background-size: cover;
+}
+.container {
+    margin-left: 10px;
+}
+
+.panel {
+    width: 95%;
+}
+
+.profile-badge img {
+    height: 120px;
+    width: 100%;
+}
+
+.user-detail {
+    background-color: #fff;
+    position: relative;
+    padding: 65px 0px 10px 0px;
+    color: #8B8B89;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    z-index: 1001;
+}
+
+.profile-pic img {
+    height: 100%;
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #c1c1c1;
+}
+
+.divide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.follow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.card-body a i {
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.card-body a {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-header {
+    border-bottom: 2px solid lightblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bottom {
+    margin-bottom: 25px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.bottom a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.Home .glyphicon {
+    width: 40px;
+    font-size: 16px;
+}
+.Home
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    height: 52%;
+    margin-left: -16px;
+    grid-row-gap: 15px;
+}

@@ -18,7 +18,7 @@ class CreateBooksTable extends Migration
             $table->string('name');
             $table->string('photo');
             $table->string('isbn');
-            $table->string('filed');
+            $table->string('field');
             $table->integer('borrow');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
