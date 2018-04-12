@@ -51,12 +51,12 @@ class HomeController extends Controller
     {
         return view('add');
     }
-<<<<<<< HEAD
     
-        public function search()
+    public function search()
     {
         return view('search');
-=======
+    }
+    
     public function delete($id)
     {
         $user_book=book::find($id);
@@ -78,6 +78,5 @@ class HomeController extends Controller
     {
         $user_book=book::find($id);
         return view('edit')->with('user_book',$user_book);
->>>>>>> 9ca8b084ad30e13984cb418b96cbd3ea60242281
     }
 }
