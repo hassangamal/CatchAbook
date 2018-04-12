@@ -29,4 +29,6 @@ Route::get('/mybrow', 'HomeController@mybrow');
 Route::get('/brow', 'HomeController@brow');
 // to Add books
 Route::get('/add', 'HomeController@add');
+// to search for a book 
+Route::get('/search', 'HomeController@search');
 

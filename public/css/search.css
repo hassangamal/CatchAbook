@@ -1,0 +1,82 @@
+
+.extra-class
+{
+    
+  width:50%;
+  margin:15px auto;
+  width:60%;
+  background-color:rgba(0,0,0,.7);
+  padding:25px;
+  color:#f90;
+  border-radius:10px
+    
+}
+
+.btn-content
+{
+    
+ text-align: center; 
+ padding-top: 15px; 
+    
+}
+
+.btn-content button
+{
+      
+  background-color:#fff;
+  color:#f90;
+  border:1px solid #ff9900bc;
+     min-width: 140px;
+}
+
+.btn-content button:hover
+ {
+     
+  background-color:#f90 !important;
+  color:#fff !important; 
+ }
+
+body 
+{
+  background-image: url("../imgs/2.jpg");
+}
+
+label
+{
+    color: darkorange;
+    font-size: 15px;
+    margin:5px 0 -5px 0;
+}
+
+.isbninfo{
+  position:relative;
+    max-height:34px;
+}
+
+.fa-info-circle{
+  font-size:2em;
+  position:absolute;
+  color:#000;
+  width:100%;
+  left: calc(100% - 40px) !important;
+  top: calc(3px);
+}
+
+
+#rr{
+    color: rgba(0,0,0,0);
+    width: 32px !important;
+    height: 32px !important;
+    top: calc(-32px);
+}
+
+
+
+
+
+
+
+ 
+
+
+
