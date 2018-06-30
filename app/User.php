@@ -32,7 +32,7 @@ class User extends Authenticatable
     }
     public function Comment()
     {
-        return $this->hasMany('App\comment');
+        return $this->hasMany('CatchAbook\comment');
     }
 
 }

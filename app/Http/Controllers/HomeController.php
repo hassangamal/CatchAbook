@@ -31,7 +31,7 @@ class HomeController extends Controller
         $user = Auth::user();
         $books = $user->book;
         $comments = $user->comment;
-        return view('home')->with('books', $books)->with('user',$user)->with('comments',$comments);
+       return view('home')->with('books', $books)->with('user',$user)->with('comments',$comments);
     }
     public function myborrow()
     {

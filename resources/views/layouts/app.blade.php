@@ -112,8 +112,8 @@
                         <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                     @else
                         <li style="margin-top: 7px; display:flex;">
-                            <input class="search-input" placeholder="Search books" type="text"/>
-                            <a class="searchicon"><i class="fas fa-search"></i></a>
+                            <input class="search-input" placeholder="Search books" type="text" />
+                            <a class="searchicon" href="{{ route('search') }} "><i class="fas fa-search"></i></a>
                         </li>
                         <li><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                         <li class="nav-item dropdown">
@@ -122,7 +122,7 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#" onclick="">Profile</a>
+                                <a href="{{ route('add') }}" class="dropdown-item" href="#" onclick="">Add Book</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

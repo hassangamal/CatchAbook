@@ -102,3 +102,19 @@ body
     margin-left: -16px;
     grid-row-gap: 15px;
 }
+
+
+.add
+{
+    background-color:white;
+    color:#f90;
+    border:1px solid #ff9900bc;
+    border-radius: 5px;
+}
+
+.add:hover
+{
+
+    background-color:#f90 !important;
+    color:#fff !important;
+}

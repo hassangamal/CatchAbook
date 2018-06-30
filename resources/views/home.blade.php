@@ -38,10 +38,10 @@
                             <div class="follow">
                                 <div>
                                     <a href="{{ url('/borrow') }}">
-                                        <button class="btn btn-primary" style=" font-size: 15px;margin-bottom: 5px;">Borrow</button>
+                                        <button class="btn btn-primary add" style=" font-size: 15px;margin-bottom: 5px;">Borrow</button>
                                     </a>
                                     <a href="{{ url('/myborrow') }}">
-                                        <button class="btn btn-primary" style="font-size: 15px;">MyBorrow</button>
+                                        <button class="btn btn-primary add" style="font-size: 15px;">MyBorrow</button>
                                     </a>
                                 </div>
                                 <div >
@@ -53,8 +53,8 @@
                         <div class="card-header">Contact</div>
                         <div class="card-body">
                             <div class="follow">
-                                <a href="#" class="btn btn-success btn-sm" style="padding: 10px">Follow</a>
-                                <a href="#" class="btn btn-info btn-sm"style="padding: 10px">Send Messege</a>
+                                <a href="#" class="btn btn-success btn-sm add" style=" padding: 10px">Follow</a>
+                                <a href="#" class="btn btn-info btn-sm add"style=" padding: 10px">Send Messege</a>
                             </div>
                         </div>
                         <div class="card-header">Comments</div>
@@ -67,7 +67,7 @@
                                     {{ method_field('POST') }}
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <input type="text" id="comment" name="comment" style="padding: 10px; border: 1px solid #f90;font-size: 14px; border-radius: 5px; width: 90%" placeholder="Please Add Your Comment Here" required>
-                                    <button class="btn btn-success" type="submit" style="font-size: 15px; text-align: center;margin-top: 5px; width: 90%" >
+                                    <button class="btn btn-info btn btn-dark form-control add" type="submit" style="font-size: 15px; text-align: center;margin-top: 5px; width: 90%" >
                                         <span class="glyphicon glyphicon-plus"></span> Add Comment</button>
                                 </form>
                         </div>
@@ -82,18 +82,20 @@
                             <h5 class="card-title" style="font-weight: bold;font-size: 20px">{{$book->name}}</h5>
                             <p class="card-text">Some quick example text to build on the card title</p>
                         </div>
-                        <div style="display: grid;  grid-template-columns: 1fr 1fr; grid-column-gap: 5px;padding: 8px;">
-                            <form method="post" action="{{ url("delete/$book->id")}}" style="text-align: left;">
+                        <div style="display: grid;  grid-template-columns: 1fr 1fr; grid-column-gap: 5px;padding: 5px;">
+                            <form method="post" action="{{ url("delete/$book->id")}}" >
                                 {{ method_field('DELETE') }}
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                <button class="btn btn-danger btn-sm"  type="submit" style="font-size: 20px">
-                                    <span class="glyphicon glyphicon-trash"></span>Delete</button>
+                                <button class="btn btn-danger btn-sm add"  type="submit" >
+                                    <span class="glyphicon glyphicon-trash" style="margin-right: 20px;
+    padding: 5px; width: 70px; margin-left: 20px">Delete</span></button>
                             </form>
-                            <form method="post" action="{{ url("edit/$book->id")}}" style="text-align: right;margin-right: 27px;">
+                            <form method="post" action="{{ url("edit/$book->id")}}">
                                 {{ method_field('GET') }}
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                <button class="btn btn-success btn-sm" type="submit" style="font-size: 20px">
-                                    <span class="glyphicon glyphicon-edit"></span>Update</button>
+                                <button class="btn btn-success btn-sm add" type="submit">
+                                    <span class="glyphicon glyphicon-edit" style="margin-right: 20px;
+    padding: 5px;width: 70px; margin-left: 20px">Update</span></button>
                             </form>
                         </div>
                     </div>

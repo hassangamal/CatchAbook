@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower');
+
+body
+{
+    margin:0;
+    padding: 0;
+    background: url("../imgs/im1.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+.box
+{
+    margin:30px auto;
+    width:70%;
+    padding:40px 0px;
+    background: rgba(77, 77, 77, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    min-width: 350px;
+    opacity: 0.8;
+
+}
+
+.btn-sbmt{
+    text-align: center;
+}
+.box h1
+{
+    margin:0 0 30px;
+    padding:0;
+    color:white;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    font-style:initial;
+
+}
+.box .inputbox
+{
+    position: relative;
+    width:70%;
+    margin: 0 auto; /*center*/
+}
+.box .inputbox input
+{
+    width:100%;
+    padding: 10px 0;
+    font-size:1em;
+    color:#fff;
+    margin-bottom: 30px;
+    border:none;
+    outline:none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 2px;
+}
+.box .inputbox label
+{
+    position: relative;
+    top:-55px;
+    font-size:1.4em;
+    color:#fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.box .inputbox input:focus ~label,
+.box .inputbox input:valid ~label
+{
+    top:-80px;
+    left:0;
+    color:#f90;
+    font-size:15px;
+}
+.box .button{
+    background: transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    background:#f90;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.box .state
+{
+    color:#fff;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.star-rating {
+    direction:rtl;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.star-rating input[type=radio] {
+    display: none;
+}
+
+.star-rating label {
+    color: #bbb;
+    font-size: 18px;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+    color: #f90;
+}
+
+label[for="inputfile"]
+{
+    position: relative;
+    width: 140px;
+    height: 110px;
+    border-radius: 17%;
+    background: url('../imgs/im2.jpg');
+    background-size: 100% 100%;
+    cursor: pointer;
+    display:inline-block;
+    transition: all .2s ease-in-out;
+    margin:0% 0% 6% 44%;
+
+}
+
+label[for="inputfile"]:hover
+{
+    border: 3px solid  black;
+}
+input[type="file"]
+{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+.start{
+    text-align: center;
+    color:white;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size:30px;
+}
+
